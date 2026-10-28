@@ -1,28 +1,30 @@
 # GetItDone
 
-![Logo](get_it_done_logo.ico)
-
-## Overview
-GetItDone is a sleek, CustomTkinter-based task manager that helps you track, edit, and delete your to-do items. It uses the Anthropic Sans font family for a modern look and a Midnight Indigo theme.
+A desktop task manager built with Python and CustomTkinter. GetItDone lets you create, edit, and delete tasks through a simple interface with a Midnight Indigo theme.
 
 ## Screenshots
 
-![Main UI](Screenshot_default.png)
+![Main Interface](Screenshot_default.png)
 
-![Edit Task Dialog](Screenshot_list.png)
+![Task List](Screenshot_list.png)
 
 ## Features
-- Add, edit, and delete tasks
-- Persistent storage in `tasks.json`
-- Custom fonts loaded process‑private on Windows
-- Responsive layout that fits an 800×600 window
-- Clean, commented codebase
+
+- **Task management:** Add, edit, and delete tasks.
+- **Persistent storage:** Tasks are saved locally in `tasks.json`.
+- **Custom interface:** Midnight Indigo theme with Anthropic Sans fonts.
+- **Windows font support:** Loads custom fonts for use by the application.
 
 ## Installation
-- Install GetItDone.exe from ![Here](https://github.com/Apollo-WasTaken/GetItDone/releases/tag/v2.0.0)
 
-## Contributing
-Feel free to open issues or submit pull requests. Keep the code style consistent and update documentation when adding features.
+Download `GetItDone.exe` from the [latest release](https://github.com/toluoguntayo/GetItDone/releases/tag/v2.0.0) and run it.
+
+## Technologies
+
+- Python
+- CustomTkinter
+- JSON for local data storage
 
 ## License
-This project is licensed under the MIT License.
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
