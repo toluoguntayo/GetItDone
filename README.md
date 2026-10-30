@@ -1,30 +1,40 @@
 # GetItDone
 
-A desktop task manager built with Python and CustomTkinter. GetItDone lets you create, edit, and delete tasks through a simple interface with a Midnight Indigo theme.
+A desktop task manager built with Python and CustomTkinter.
 
-## Screenshots
-
-![Main Interface](Screenshot_default.png)
-
-![Task List](Screenshot_list.png)
+![GetItDone task list](Screenshots/Screenshot_default.png)
 
 ## Features
 
-- **Task management:** Add, edit, and delete tasks.
-- **Persistent storage:** Tasks are saved locally in `tasks.json`.
-- **Custom interface:** Midnight Indigo theme with Anthropic Sans fonts.
-- **Windows font support:** Loads custom fonts for use by the application.
+- Add, edit, and delete tasks
+- Save tasks between launches
+- Display task creation dates
 
-## Installation
+## Run from source
 
-Download `GetItDone.exe` from the [latest release](https://github.com/toluoguntayo/GetItDone/releases/tag/v2.0.0) and run it.
+```powershell
+python -m pip install -r requirements.txt
+python main.py
+```
 
-## Technologies
+Tasks are stored in `tasks.json` beside the application.
 
-- Python
-- CustomTkinter
-- JSON for local data storage
+## Build the Windows executable
 
-## License
+```powershell
+python -m pip install -r requirements-build.txt
+python -m PyInstaller --clean --noconfirm --onefile --windowed --name GetItDone --icon get_it_done_logo.ico --add-data "assets;assets" --add-data "get_it_done_logo.ico;." main.py
+```
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+The executable is created at `dist/GetItDone.exe`.
+
+## Screenshots
+![Default List](Screenshots/Screenshot_default.png)
+
+![Task list](Screenshots/Screenshot_list.png)
+
+![Edit task](Screenshots/Screenshot_edit.png)
+
+## Licenses
+
+The application source is licensed under the MIT License; see [LICENSE](LICENSE). The bundled JetBrains Mono font is licensed under SIL OFL 1.1; see [assets/OFL.txt](assets/OFL.txt).
