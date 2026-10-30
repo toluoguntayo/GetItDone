@@ -2,7 +2,7 @@
 
 A desktop task manager built with Python and CustomTkinter.
 
-![GetItDone task list](Screenshots/Screenshot_default.png)
+![GetItDone Logo](get_it_done_logo.ico)
 
 ## Features
 
